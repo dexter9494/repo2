@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website - Sign in</title>
+    <link rel="shortcut icon" href="favicon2.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #343a40;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin-top: 40px;
+          
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            background-color: #212529;
+            width: 500px;
+            height: 470px;
+            border-radius: 10px;
+        }
+        input{
+            background-color: #6c757d;
+            outline: none;
+            border: none;
+            color: #fff; 
+            
+        }
+        .uname > input {
+            width: 90%;
+            height: 35px;
+            border-radius: 6px;
+            padding: 4px 6px;
+            font-size: 14px;
+            margin: 10px 14px;
+        }
+        .pswd > input {
+            width: 90%;
+            height: 35px;
+            border-radius: 6px;
+            padding: 4px 6px;
+            font-size: 14px;
+            margin: 10px 14px;
+        }
+        #fpara{
+            font-size: 25px;
+            color: #fff;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 10px;
+        }
+        .in > button{
+            margin: 8px 180px;
+            background-color: #6c757d;
+            outline: none;
+            border: none;
+            width: 130px;
+            height: 40px;
+            color: #fff;
+            cursor: pointer;
+            padding: 6px 6px;
+            border-radius: 10px;
+            font-size: 19px;
+            font-weight: 500;
+        }
+        input:focus{
+            border: 1px solid lime;
+        }
+        .sign_up{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #spara{
+            font-size: 25px;
+            color: #fff;
+            text-align: center;
+            margin-top: 10px;
+        }
+     /*   .sign_up > button{
+            margin: 8px 180px;
+            background-color: #6c757d;
+            outline: none;
+            border: none;
+            width: 100px;
+            height: 40px;
+            color: #fff;
+            cursor: pointer;
+            padding: 6px 6px;
+            border-radius: 10px;
+            font-size: 19px;
+            font-weight: 500;
+        } */
+        a{
+            text-decoration: none;
+            color: #fff;
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            padding: 7px 0px;
+            margin-top: 10px;
+           border: 1px solid #343a40;
+           background-color: #6c757d;
+           border-radius: 10px;
+           font-size: 19px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="get">
+        <div class="container" >
+            <p id="fpara">Sign In</p>
+            <div class="uname">
+                <input type="text" name="username" id="" placeholder="Enter your username"> 
+            </div>
+            <div class="pswd">
+          <input type="password" name="pass" id="" placeholder="Enter your password">
+            </div>
+            <div class="in">
+                <button type="submit">Sign In</button>
+            </div>
+            <div class="sign_up">
+                 <p id="spara">Don't have an account?</p>
+                <a href="sign_up.html">Sign Up</a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

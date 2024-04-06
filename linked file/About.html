@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COREFIT - About</title>
+    <link rel="shortcut icon" href="../images/favicon2.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      .navbar {
+        display: flex;
+        justify-content: center;
+
+        padding: 16px 0px;
+        background-color: #212529;
+      }
+      .navlink {
+        margin-top: 14px;
+      }
+      .navlink > a {
+        text-decoration: none;
+        padding: 0px 12px;
+        color: #fff;
+        font-size: 24px;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+        color: lime;
+        margin-right: 120px;
+      }
+     .navlink > a:hover{
+        border: 2px solid orangered;
+        border-radius: 5px;
+        color: olive;
+      }
+      a.current{
+        border: 1px solid lime;
+        border-radius: 7px;
+        color: orange;
+      }
+      .content{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 5px;
+    
+      }
+      #person_img{
+        width: 550px;
+        height: 500px;
+      }
+      .right_content{
+        font-family: "Open Sans",Arial,sans-serif;
+        font-weight: 400;
+        width: 50%;
+        margin:50px 22px;
+      }
+      #p1 {
+       font-size: 18px;
+       margin: 7px 0px;
+      }
+      #p2{
+        color:  rgb(128, 128, 128);
+        margin: 7px 0px;
+      }
+      .right_content > h2{
+        font-size: 28px;
+        width: 70%;
+        margin: 7px 0px;
+      }
+      span{
+        color: red;
+      }
+     .list{
+      margin: 18px 12px;
+     }
+     li{
+      margin: 5px 0px;
+      padding: 5px;
+     }
+     .about{
+      background-color: #6610f2;
+      color: #fff;
+      display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 80%;
+      height: 130px;
+      margin: 30px 120px;
+      border-radius: 10px;
+      margin-bottom: 120px;
+      
+     
+     }
+     .ab{
+      padding: 12px;
+      margin: 0px 10px;
+      font-size: larger;
+      text-align: center;
+     }
+    
+     .divide{
+      text-align: center;
+      color: red;
+      margin-top: 60px;
+      margin-bottom: 60px;
+     }
+     .feat{
+      display: flex;
+      
+      margin: 10px 150px;
+      margin-bottom: 120px;
+      width: 80%;
+     }
+     .f{
+      margin: 0px 30px;    
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+     }
+     .f > p{
+      color:  rgb(128, 128, 128);
+      font-size: 16px;
+      font-weight: 400;
+
+     }
+     .f > h2{
+      margin: 15px 0px;
+      font-size: 30px;
+      font-weight: 700;
+      font-style: italic;
+     }
+    
+   .f > img{
+      max-width:40%;
+  height: 90px;
+    
+     } 
+     /* Testimonails */
+     .testimonial{
+ 
+      background-color: rgba(243, 243, 243);
+     }
+     .center{
+      text-align: center;
+     }
+     .testimonial > h3{
+      color: red;
+      
+
+     }
+     .test-container{
+           display: flex;
+            justify-content: space-between;
+            text-align: center;
+            font-size: 1.4rem;
+            padding: 1rem;
+            margin-top: 10px;
+
+     }
+     .cus-details > img{
+      border-radius: 50%;
+     }
+     .checked {
+      margin: 10px 0px;
+            color: #ff9529;
+        }
+        .uncheck{
+          color: black;
+        }
+        .testimonial-text {
+          margin: 1rem 0;
+  color: #444;
+
+        }
+        .top-footer{
+          background-color:rgb(18, 30, 34);
+          display: flex;
+         justify-content:space-evenly;
+         height: 400px;
+         
+          
+        }
+        .about-footer{
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+        }
+       
+        .color-red{
+          color: red;
+          font-size: 0.8em;
+          margin-left: 34px;
+        }
+        .color-white{
+          color: white;
+          font-size: 1.6em;
+        }
+        .color-rbg{
+          color:RGBA(255, 255, 255, 0.7);
+          margin-left: 32px;
+          width: 300px;
+          margin-top: 20px;
+        }
+        #icon{
+          border-radius: 50%;
+          width: 35px;
+          height: 35px;
+        }
+        .name-span{
+          margin-top: 80px;
+        }
+        .explore{
+         margin-top: 60px;
+        }
+        .exp{
+          text-decoration: none;
+          font-size: 1.1em;
+        }
+      .exp:hover {
+      color: #dc3545;
+     }
+     .copyright{
+      height: 190px;
+      background-color: black !important;
+      color: rgb(128, 128, 128);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      font-size: 1.3em;
+     }
+     
+     
+    
+
+  
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="nav">
+        <div class="icon">
+          <i class="material-symbols-outlined">CoreFit</i>
+        </div>
+  
+        <div class="navlink">
+          <a href="../index.html">Home</a>
+          <a href="About.html" class="current" >About</a>
+          <a href="Pricing_Plan.html">Pricing & Plan</a>
+          <a href="Classes.html" >Classes</a>
+          <a href="Schedule.html">Schedule</a>
+          <a href="Contact.html">Contact</a>
+          <a href="sign_in.html">Sign in</a>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="img">
+            <img src="../images/About-img.jpg" alt="Blank" srcset="" id="person_img">
+        </div>
+        <div class="right_content">
+            <p id="p1" >INFORMATION ABOUT US</p>
+        <h2><span>COREFIT</span> A CROSSFIT WORKOUT TRAINING CENTER</h2>
+        <p id="p2">Physically exercises are great for our muscles, heart, and lungs. Some more advantages of the 
+        physical activities are; it builds our bones strong, saves us from obesity by promoting a healthy weight,
+         saves us from diabetes, helps us to build healthy habits, prevents
+          high blood pressure, and other major problems. Thus, through regular exercises and healthy food in
+           timely manner, we can easily maintain our health and fitness</p>
+           <div class="list">
+            <ul >
+                <li>Men Fitness and Workout</li>
+                <li>Women Fitness and Workout</li>
+                <li>Personal Trainings</li>
+            </ul>
+           </div>
+        </div>
+        
+      </div>
+      <div class="about">
+        <div class="ab one"><p>10+</p>
+          <p>YEARS OF EXPERIENCE</p>
+        </div>
+        <div class="ab two"><p>20+</p><P>FITNESS TRAINERS</P></div>
+        <div class="ab three"><p>80+</p><P>BEST EQUIPMENTS</P></div>
+        <div class="ab four"><p>4k+</p><P>SATISFIED CLIENTS</P></div>
+
+      </div>
+      <div class="Join">
+        <h1 class="divide">Join us for free</h1>
+        <div class="feat">
+        
+          <div class="f feat1">
+            <img src="../images/001-fitness.jpg" alt="fitness">
+            <h2>FREE FITNESS TRAINING</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque eos nihil, magni et soluta porro! Totam aliquam tempore odit, aliquid, asperiores sed sint, saepe eaque et cupiditate accusantium vitae officia.</p>
+          </div>
+          <div class="f feat2">
+            <img src="../images/002-treadmill.jpg" alt="treadmill">
+            <h2>TONS OF CARDIO & STRENGTH</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro officia repudiandae, nobis numquam temporibus asperiores, suscipit incidunt autem repellendus nemo facilis nostrum possimus, vel aliquid perferendis accusamus. Doloribus, accusamus nisi!</p>
+          </div>
+          <div class="f feat3">
+            <img src="../images/003-vip-card.jpg" alt="vip card">
+            <h2>NO COMMITMENT MEMBERSHIPS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quasi nostrum aliquid quod amet accusamus maxime cum obcaecati quas pariatur, dolores nemo aliquam nesciunt voluptas soluta veniam saepe impedit nam?</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <h3 class="center">TESTIMONIAL</h3>
+        <h1 class="center">HAPPY PEOPLE</h1>
+        <div class="test-container">
+          <div class="test-box">
+            <div class="customer">
+              <div class="cus-details">
+                <img src="../images/person1.jpeg" alt="">
+                <p>Ross lee</p>
+              </div>
+            </div>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+          </div>
+          <p class="testimonial-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+              voluptas cupiditate aspernatur odit doloribus non.
+          </p>
+          </div>
+          <div class="test-box">
+            <div class="customer">
+              <div class="cus-details">
+                <img src="../images/person2.jpeg" alt="">
+                <p>Ben Roy</p>
+              </div>
+            </div>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star uncheck"></span>
+          </div>
+          <p class="testimonial-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+              voluptas cupiditate aspernatur odit doloribus non.
+          </p>
+          </div>
+          <div class="test-box">
+            <div class="customer">
+              <div class="cus-details">
+                <img src="../images/person3.jpeg" alt="">
+                <p>Amelia Watson</p>
+              </div>
+            </div>
+            <div class="star-rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star uncheck"></span>
+          </div>
+          <p class="testimonial-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+              voluptas cupiditate aspernatur odit doloribus non.
+          </p>
+          </div>
+          
+        </div>
+      </div>
+      <footer>
+        <div class="top-footer">
+          <div class="about-footer">
+
+            <div class="name-span"><span><img id="icon" src="../images/favicon.png" alt=""></span>  <span class="color-white">COREFIT</span></div>
+            <div>  <p class="color-red">CROSSFIT & FITNESS</p></div>
+            <div> <p class="color-rbg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut numquam, dignissimos corporis neque adipisci in explicabo.</p></div>
+          
+          
+           
+          </div>
+          <div class="explore">
+            <h2 class="color-white">Explore</h2>
+            <ul class="color-rbg list">
+              <li class="exp" ><a href="#nav" class="color-rbg exp">Home</a></li>
+              <li class="exp"> <a href="#nav" class="color-rbg exp">About</a></li>
+              <li class="exp"><a href="#nav" class="color-rbg exp">Trainers</a></li>
+              <li class="exp"><a href="#nav" class="color-rbg exp">Classes</a></li>
+              <li class="exp"><a href="#nav" class="color-rbg exp">Schedule</a></li>
+              <li class="exp"><a href="#nav" class="color-rbg exp">Contact</a></li>
+            </ul>
+         
+          </div>
+         
+        </div>
+        <div class="copyright">
+          <div> <p>Copyright ©2024 All rights reserved | COREFIT</p></div>
+         
+        </div>
+      </footer>
+      
+</body>
+</html>

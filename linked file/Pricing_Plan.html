@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COREFIT - Pricing & Plan</title>
+    <link rel="shortcut icon" href="images\favicon2.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+        
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       
+      }
+    
+      .navbar {
+        display: flex;
+        justify-content: center;
+
+        padding: 16px 0px;
+        background-color: #212529;
+      }
+      .navlink {
+        margin-top: 14px;
+      }
+      .navlink > a {
+        text-decoration: none;
+        padding: 0px 12px;
+        color: #fff;
+        font-size: 24px;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+        color: lime;
+        margin-right: 120px;
+      }
+      a:hover{
+        border: 2px solid orangered;
+        border-radius: 5px;
+        color: olive;
+      }
+      a.current{
+        border: 1px solid lime;
+        border-radius: 7px;
+        color: orange;
+      }
+      .heading{
+        text-align: center;
+        margin:20px 0px;
+      }
+      .color-red{
+        color: #e1193e;
+        
+      }
+      .container{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+       
+       
+      }
+      .plan{
+        display: flex;
+        flex-direction: column;
+       
+       align-items: center;
+        border: 1px solid #3a86a3;
+        background-color:whitesmoke;
+        width: 20%;
+        height: 340px;
+
+      }
+      .plan > div{
+        margin: 10px 0px;
+      }
+      .price > p {
+        font-size: 1.2em;
+      }
+      .color-skyblue{
+        color:#028fc1;
+      }
+      li{
+        
+        padding: 10px 0px;
+        font-size: 16px;
+        font-weight: 400;
+      
+
+       
+      }
+      button{
+        background-color:  #e1193e;
+        color: white;
+        outline: none;
+        border: none;
+        padding: 12px 16px;
+        cursor: pointer;
+        
+      }
+      .plan:hover{
+        border-radius: 15px;
+        border: 2px solid black;
+      }
+   
+
+      
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="icon">
+          <i class="material-symbols-outlined">CoreFit</i>
+        </div>
+  
+        <div class="navlink">
+          <a href="../index.html">Home</a>
+          <a href="About.html" >About</a>
+          <a href="Pricing_Plan.html" class="current">Pricing & Plan</a>
+          <a href="Classes.html" >Classes</a>
+          <a href="Schedule.html">Schedule</a>
+          <a href="Contact.html">Contact</a>
+          <a href="sign_in.html">Sign in</a>
+        </div>
+      </nav>
+      <div class="heading">
+        <p class="color-red">OUR PRICING</p>
+        <h2>PRICING & PACKAGES</h2>
+      </div>
+      <div class="container">
+        <div class="plan basic">
+        
+          <div class="para"><h2 class="color-skyblue">BASIC PLAN</h2></div>
+          <div class="price"> <p class="color-skyblue">Rs 500</p></div>
+          <div class="specs">
+           <ul>
+          <li>Conveniet Time</li>
+          <li>Group Training</li>
+          <li>One Hour Access</li>
+          <li>Towel Service</li>
+        </ul>
+          </div>
+          <div class="btn">
+            <button type="submit">GET STARTED</button>
+          </div>
+         
+        </div>
+        <div class="plan beginner">
+          <div class="para"> <h2 class="color-skyblue">BEGINNER PLAN</h2></div>
+          <div class="price"> <p class="color-skyblue">Rs 1000</p></div>
+          <div class="specs">
+            
+              <ul>
+                <li>Conveniet Time</li>
+                <li>Group Training</li>
+                <li>Two Hour Access</li>
+                <li>Towel Service</li>
+            </ul>
+          </div>
+          <div class="btn">
+            <button type="submit">GET STARTED</button>
+          </div>
+         
+         
+        </div>
+        <div class="plan premium">
+          <div class="para"> <h2 class="color-skyblue">PREMIMUM PLAN</h2></div>
+          <div class="price"> <p class="color-skyblue">Rs 2000</p></div>
+          <div class="specs">
+            <ul>
+              <li>Personal Trainer</li>
+              <li>Locker Room</li>
+              <li>Individual Training</li>
+              <li>Food Plan</li>
+            </ul>
+          </div>
+          <div class="btn">
+            <button type="submit">GET STARTED</button>
+          </div> 
+        </div>
+        <div class="plan ultimate">
+          <div class="para"> <h2 class="color-skyblue">ULTIMATE PLAN</h2></div>
+          <div class="price"> <p class="color-skyblue">Rs 3000</p></div>
+          <div class="specs">
+          <ul>
+           <li>Personal Trainer</li>
+              <li>Locker Room</li>
+              <li>Individual Training</li>
+              <li>Food Plan</li>
+          </ul>
+          </div>
+          <div class="btn">
+            <button type="submit">GET STARTED</button>
+          </div>
+         
+         
+        </div>
+      </div>
+</body>
+</html>

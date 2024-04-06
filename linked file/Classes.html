@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website - Classes</title>
+    <link rel="shortcut icon" href="images\favicon2.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+        
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    
+      .navbar {
+        display: flex;
+        justify-content: center;
+
+        padding: 16px 0px;
+        background-color: #212529;
+      }
+      .navlink {
+        margin-top: 14px;
+      }
+      .navlink > a {
+        text-decoration: none;
+        padding: 0px 12px;
+        color: #fff;
+        font-size: 24px;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+        color: lime;
+        margin-right: 120px;
+      }
+      a:hover{
+        border: 2px solid orangered;
+        border-radius: 5px;
+        color: olive;
+      }
+      a.current{
+        border: 1px solid lime;
+        border-radius: 7px;
+        color: orange;
+      }
+      .img-container{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      margin: 10px 38px;
+      }
+      .para-classes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       position: relative;
+       color: #fff;
+       
+       background-color: #030513;
+       width: 180px;
+       height: 33px;
+       text-align: center;
+      }
+      .para-1{
+        position: absolute;
+        top: 350px;
+      }
+      .para-2{
+        position: absolute;
+        top: 350px;
+      }
+      .para-3{
+        position: absolute;
+        top: 350px;
+      }
+      .para-4{
+        position: absolute;
+        top: 655px;
+      }
+      .para-5{
+        position: absolute;
+        top: 655px;
+      }
+      .para-6{
+        position: absolute;
+        top: 655px;
+      }
+      img{
+        width: 350px;
+        height: 300px;
+      }
+     
+      
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="icon">
+          <i class="material-symbols-outlined">CoreFit</i>
+        </div>
+  
+        <div class="navlink">
+          <a href="../index.html">Home</a>
+          <a href="About.html" >About</a>
+          <a href="Pricing_Plan.html">Pricing & Plan</a>
+          <a href="Classes.html" class="current">Classes</a>
+          <a href="Schedule.html">Schedule</a>
+          <a href="Contact.html">Contact</a>
+          <a href="sign_in.html">Sign in</a>
+        </div>
+      </nav>
+      <div class="img-container">
+        <div class="classes c-one">
+          <div class="img-classes">
+          <img src="../images/classes-1.jpg" alt="">
+          </div>
+          <div class="para-classes para-1">
+            <span>WEIGHT LIFTING</span>
+          </div>
+        </div>
+       
+        <div class="classes c-two">
+          <div class="img-classes">
+            <img src="../images/classes-2.jpg" alt="">
+          </div>
+          <div class="para-classes para-2">
+            <span>BODY BUILDING</span>
+          </div>
+        </div>
+        <div class="classes c-three">
+          <div class="img-classes">
+            <img src="../images/classes-3.jpg" alt="">
+          </div>
+          <div class="para-classes para-3">
+            <span>CARDIO</span>
+          </div>
+        </div>
+        <div class="classes c-four">
+          <div class="img-classes">
+            <img src="../images/classes-4.jpg" alt="">
+          </div>
+          <div class="para-classes para-4">
+            <span>MARTIAL ARTS</span>
+          </div>
+        </div>
+        <div class="classes c-five">
+          <div class="img-classes">
+            <img src="../images/classes-5.jpg" alt="">
+          </div>
+          <div class="para-classes para-5">
+            <span>YOGA</span>
+          </div>
+        </div>
+        <div class="classes c-six">
+          <div class="img-classes">
+            <img src="../images/classes-6.jpg" alt="">
+          </div>
+          <div class="para-classes para-6">
+            <span>CYCLING</span>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
