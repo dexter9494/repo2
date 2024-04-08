@@ -25,7 +25,7 @@
             flex-direction: column;
             background-color: #212529;
             width: 500px;
-            height: 470px;
+            height: 500px;
             border-radius: 10px;
           
         }
@@ -59,6 +59,14 @@
             margin: 14px 14px;
         }
         .pswd > input{
+            width: 94%;
+            height: 35px;
+            border-radius: 6px;
+            padding: 4px 6px;
+            font-size: 14px;
+            margin: 14px 14px;
+        }
+        .email > input{
             width: 94%;
             height: 35px;
             border-radius: 6px;
@@ -135,10 +143,13 @@
                 <input type="text" name="lname" id="" placeholder="Last Name">
             </div>
             <div class="username">
-                <input type="text" name="username" id="" placeholder="Enter your username">
+                <input type="text" name="username" id="" placeholder="Enter your username" required>
+            </div>
+            <div class="email">
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required>
             </div>
             <div class="pswd">
-                <input type="password" name="pass" id="" placeholder="Enter new password">
+                <input type="password" name="pass" id="" placeholder="Enter new password" required>
             </div>
             <div class="submit">
                 <button type="submit" id="submit">Create your Account</button>
