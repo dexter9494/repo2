@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      .navbar {
+        display: flex;
+        justify-content: center;
+
+        padding: 16px 0px;
+        background-color: #212529;
+      }
+      .navlink {
+        margin-top: 14px;
+      }
+      .navlink > a {
+        text-decoration: none;
+        padding: 0px 12px;
+        color: #fff;
+        font-size: 24px;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+        color: lime;
+        margin-right: 120px;
+      }
+     .navlink > a:hover{
+        border: 2px solid orangered;
+        border-radius: 5px;
+        color: olive;
+      }
+      a.current{
+        border: 1px solid lime;
+        border-radius: 7px;
+        color: orange;
+      }
+.logout{
+  margin-left: 1300px;
+  margin-top: 500px;
+}
+#logout{
+  background-color: #212529;
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="nav">
+        <div class="icon">
+          <i class="material-symbols-outlined">CoreFit</i>
+        </div>
+  
+        <div class="navlink">
+          <a href="../index.html">Home</a>
+          <a href="About.html" >About</a>
+          <a href="Pricing_Plan.html">Pricing & Plan</a>
+          <a href="Classes.html" >Classes</a>
+          <a href="Schedule.html">Schedule</a>
+          <a href="Contact.html">Contact</a>
+          <a href="#" class="current">Profile</a>
+          
+        </div>
+      </nav>
+      <div class="logout">
+        <form action="/logout" method="get">
+          <button id="logout" type="submit">Logout</button>
+      </form>
+      </div>
+     
+</body>
+</html>
