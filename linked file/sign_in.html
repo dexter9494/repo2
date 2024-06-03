@@ -122,17 +122,19 @@
     </style>
 </head>
 <body>
-    <form action="" name="formin" method="get" onsubmit="validate()">
+    <form action="/login" name="formin" method="post" onsubmit="validate()">
         <div class="container" >
             <p id="fpara">Sign In</p>
             <div class="uname">
                 <input type="text" name="username" id="" placeholder="Enter your username"> 
             </div>
-            <div class="email">
-                <input type="email" name="email" id="" placeholder="Enter your Email" required>
+        <!--
+<div class="email">
+                <input type="email" name="email" id="" placeholder="Enter your Email">
             </div>
+        -->    
             <div class="pswd">
-          <input type="password" name="pass" id="pswd" placeholder="Enter your password">
+          <input type="password" name="password" id="pswd" placeholder="Enter your password">
           <input type="checkbox" name="" id="chkbox" onclick="showpswd()">
             </div>
             <div class="cnfrmpswd">
