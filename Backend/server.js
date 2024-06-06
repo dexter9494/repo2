@@ -18,7 +18,7 @@ const signupRoute = require('./signup');
 const loginRoute = require('./login');
 const profileRoutes = require('./profile');
 
-const port = 3000;
+const port =  process.env.PORT | 3000;
 
 
 // Middleware to parse URL-encoded bodies (form data)
