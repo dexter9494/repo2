@@ -23,6 +23,7 @@ const port =  process.env.PORT | 3000;
 
 // Middleware to parse URL-encoded bodies (form data)
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 // Serve HTML files
 app.get('/signup', (req, res) => {
