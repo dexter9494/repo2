@@ -122,11 +122,11 @@
     </style>
 </head>
 <body>
-    <form action="/login" name="formin" method="post" onsubmit="validate()">
+    <form action="/login" name="formin" method="post" onsubmit="validate()" id="loginform">
         <div class="container" >
             <p id="fpara">Sign In</p>
             <div class="uname">
-                <input type="text" name="username" id="" placeholder="Enter your username"> 
+                <input type="text" name="username" id="user" placeholder="Enter your username"> 
             </div>
         <!--
 <div class="email">
@@ -149,5 +149,30 @@
             </div>
         </div>
     </form>
+
+    <script>
+        document.getElementById('loginform').addEventListener('submit',function(event){
+            event.preventDefault();
+            const username = document.getElementById('user').value;
+            const password = document.getElementById('pswd').value; 
+
+            fetch('/login',{
+                method:'POST',
+                headers:{
+                    'Content-type':'application.json'
+                },
+                body: JSON.stringify({username,password})
+            }).then(response => response.json())
+            .then(data =>{
+                if(data.success){
+                    alert("Login successful");
+                }else{
+                    alert("Login failed: "+ data.message);
+                }
+            }).catch(error =>{
+                console.log("Error",error);
+            })
+        })
+        </script>
 </body>
 </html>
