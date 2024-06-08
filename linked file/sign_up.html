@@ -135,21 +135,21 @@
     </style>
 </head>
 <body >
-    <form action="/signup" method="post">
+    <form action="/signup" method="post" id="signupForm" >
         <div class="container">
             <p id="fpara">Create an Account</p>
             <div class="name">
-                <input type="text" name="fname" id="" placeholder="First name">
-                <input type="text" name="lname" id="" placeholder="Last Name">
+                <input type="text" name="fname" id="fname" placeholder="First name">
+                <input type="text" name="lname" id="lname" placeholder="Last Name">
             </div>
             <div class="username">
-                <input type="text" name="username" id="" placeholder="Enter your username" required>
+                <input type="text" name="username" id="user" placeholder="Enter your username" required>
             </div>
             <div class="email">
                 <input type="email" name="email" id="email" placeholder="Enter your Email" required>
             </div>
             <div class="pswd">
-                <input type="password" name="pass" id="" placeholder="Enter new password" required>
+                <input type="password" name="pass" id="pass" placeholder="Enter new password" required>
             </div>
             <div class="submit">
                 <button type="submit" id="submit">Create your Account</button>
@@ -162,5 +162,35 @@
            
         </div>
     </form>
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const fname = document.getElementById('fname').value;
+            const lname = document.getElementById('lname').value;
+            const username = document.getElementById('user').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('pass').value;
+
+            fetch('/api/signup', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ fname,lname,username, email,password })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Signup successful');
+                } else {
+                    alert('Signup failed: ' + data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    </script>
+    
 </body>
 </html>
